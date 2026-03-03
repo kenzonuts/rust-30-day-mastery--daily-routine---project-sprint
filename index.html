@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracker Ramadan 30 Hari</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌙 Tracker Ramadan 30 Hari</h1>
+            <div class="progress-info">
+                <span id="current-date"></span>
+                <span id="day-counter"></span>
+            </div>
+        </header>
+
+        <section class="daily-schedule">
+            <h2>🗓 Template Harian</h2>
+            <div class="schedule-grid" id="schedule-grid"></div>
+        </section>
+
+        <section class="weekly-targets">
+            <h2>🎯 Target 30 Hari</h2>
+            <div class="weeks-container">
+                <div class="week-card week-1">
+                    <div class="week-header">
+                        <h3>🔵 MINGGU 1 (Tgl 3-9)</h3>
+                        <span class="week-focus">Penguatan Dasar Rust</span>
+                    </div>
+                    <div class="week-content">
+                        <div class="targets">
+                            <h4>Target:</h4>
+                            <ul>
+                                <li>Ownership & Borrowing benar-benar paham</li>
+                                <li>Struct & Enum lancar</li>
+                                <li>Vec & HashMap terbiasa</li>
+                                <li>Error handling dasar</li>
+                            </ul>
+                        </div>
+                        <div class="outputs">
+                            <h4>Output:</h4>
+                            <label><input type="checkbox" data-week="1" data-output="1"> 3 mini project CLI sederhana</label>
+                            <label><input type="checkbox" data-week="1" data-output="2"> Minimal 6 commit GitHub</label>
+                        </div>
+                        <div class="weekend">
+                            <h4>Weekend:</h4>
+                            <ul>
+                                <li>Refactor mini project</li>
+                                <li>Rapihin struktur folder</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card week-2">
+                    <div class="week-header">
+                        <h3>🟢 MINGGU 2 (Tgl 10-16)</h3>
+                        <span class="week-focus">Backend Basic</span>
+                    </div>
+                    <div class="week-content">
+                        <div class="targets">
+                            <h4>Belajar:</h4>
+                            <ul>
+                                <li>Routing</li>
+                                <li>REST API</li>
+                                <li>JSON</li>
+                                <li>Connect database</li>
+                                <li>Basic auth</li>
+                            </ul>
+                        </div>
+                        <div class="outputs">
+                            <h4>Output:</h4>
+                            <label><input type="checkbox" data-week="2" data-output="1"> 1 API sederhana jadi</label>
+                            <label><input type="checkbox" data-week="2" data-output="2"> Bisa CRUD data</label>
+                        </div>
+                        <div class="weekend">
+                            <h4>Weekend:</h4>
+                            <ul>
+                                <li>Test API</li>
+                                <li>Perbaiki error</li>
+                                <li>Tambah 1 fitur kecil</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card week-3">
+                    <div class="week-header">
+                        <h3>🟡 MINGGU 3 (Tgl 17-23)</h3>
+                        <span class="week-focus">Project Nyata</span>
+                    </div>
+                    <div class="week-content">
+                        <div class="targets">
+                            <h4>Bangun 1 project pilihan:</h4>
+                            <ul>
+                                <li>Habit tracker CLI</li>
+                                <li>Probability simulator</li>
+                                <li>Simple backend service</li>
+                            </ul>
+                        </div>
+                        <div class="outputs">
+                            <h4>Target:</h4>
+                            <label><input type="checkbox" data-week="3" data-output="1"> Core logic selesai</label>
+                            <label><input type="checkbox" data-week="3" data-output="2"> Bisa dijalankan stabil</label>
+                        </div>
+                        <div class="weekend">
+                            <h4>Weekend:</h4>
+                            <ul>
+                                <li>Polish fitur</li>
+                                <li>Rapikan kode</li>
+                                <li>Tambah dokumentasi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="week-card week-4">
+                    <div class="week-header">
+                        <h3>🔴 MINGGU 4 (Tgl 24-30)</h3>
+                        <span class="week-focus">Naik Level</span>
+                    </div>
+                    <div class="week-content">
+                        <div class="targets">
+                            <h4>Fokus:</h4>
+                            <ul>
+                                <li>Refactor total</li>
+                                <li>Optimasi</li>
+                                <li>Tambah fitur lanjutan</li>
+                                <li>Buat README proper</li>
+                                <li>Push GitHub clean</li>
+                            </ul>
+                        </div>
+                        <div class="outputs">
+                            <h4>Output akhir:</h4>
+                            <label><input type="checkbox" data-week="4" data-output="1"> 1 project serius</label>
+                            <label><input type="checkbox" data-week="4" data-output="2"> 3 mini project</label>
+                            <label><input type="checkbox" data-week="4" data-output="3"> Konsistensi 30 hari</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="book-tracker">
+            <h2>📚 Target Buku 30 Hari</h2>
+            <div class="book-info">
+                <p>25 menit × 30 hari ≈ 12-15 jam baca = 1 buku selesai</p>
+            </div>
+            <div class="daily-notes">
+                <h3>Catatan Hari Ini</h3>
+                <div class="notes-form">
+                    <label>Tanggal: <span id="notes-date"></span></label>
+                    <div class="insights-section">
+                        <h4>3 Insight:</h4>
+                        <textarea id="insight-1" placeholder="Insight 1..."></textarea>
+                        <textarea id="insight-2" placeholder="Insight 2..."></textarea>
+                        <textarea id="insight-3" placeholder="Insight 3..."></textarea>
+                    </div>
+                    <div class="action-section">
+                        <h4>1 Hal yang bisa diterapkan:</h4>
+                        <textarea id="action-item" placeholder="Apa yang akan diterapkan hari ini..."></textarea>
+                    </div>
+                    <button id="save-notes">Simpan Catatan</button>
+                </div>
+                <div class="saved-notes" id="saved-notes"></div>
+            </div>
+        </section>
+
+        <section class="day-tracker">
+            <h2>✅ Checklist Harian</h2>
+            <div class="day-checklist" id="day-checklist"></div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
